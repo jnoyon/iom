@@ -15,10 +15,10 @@
                 <div class="helpline">
                     <span class="gradient-g py-1 px-2">হেল্পলাইন</span> <a href="tel:09638113322"> 09638-113322 (10AM-5PM) </a>
                 </div>
-                <div class="helpline">
+                <div class="helpline hidden md:block">
                     <span class="gradient-g py-1 px-2">হেল্পলাইন</span> <a href="tel:09638113322"> 09638-113322 (10AM-5PM) </a>
                 </div>
-                <div class="top-menu">
+                <div class="top-menu hidden md:block">
                     <ul class="flex gap-3">
                         <li><a href="https://campus.iom.edu.bd/"> ক্যাম্পাস </a></li>
                         <li><a href="https://campus.iom.edu.bd/"> ক্যাম্পাস </a></li>
@@ -33,7 +33,7 @@
                 <div class="logo">
                     <a href="#"> <img src="images/iomlogo.png" alt="image"> </a>
                 </div>
-                <div class="main-menu">
+                <div class="main-menu hidden md:block">
                     <ul class="flex gap-3">
                         <li><a href="https://campus.iom.edu.bd/"> ক্যাম্পাস </a></li>
                         <li><a href="https://campus.iom.edu.bd/"> ক্যাম্পাস </a></li>
@@ -53,23 +53,23 @@
         <div class="hero-section py-5 relative">
             <div class="container mx-auto w-11/12">
                 <div class="hero-text text-center font-bold ">
-                    <h2 class="text-3xl"> ইসলামিক অনলাইন মাদ্রাসা </h2>
-                    <h1 class="text-6xl"> এশিয়া মহাদেশের সবচেয়ে বড় </h1>
-                    <h2 class="text-3xl"> অনলাইন মাদ্রাসা </h2>
-                    <a href="#" class="gradient-g px-5 py-3 text-xl mt-3"> আরও জানুন </a>
+                    <h2 class="text-xl md:text-3xl"> ইসলামিক অনলাইন মাদ্রাসা </h2>
+                    <h1 class="text-2xl md:text-6xl"> এশিয়া মহাদেশের সবচেয়ে বড় </h1>
+                    <h2 class="text-xl md:text-3xl"> অনলাইন মাদ্রাসা </h2>
+                    <a href="#" class="gradient-g md:px-5 md:py-3 px-5 py-2 text-lg md:text-xl mt-3"> আরও জানুন </a>
                 </div>
-                <div class="hero-fixed flex gap-7 w-full">
-                    <div class="item shadow-md p-5 text-center border-b-4 border-solid border-green-500">
+                <div class="hero-fixed flex text-sm md:gap-7 gap-2">
+                    <div class="item shadow-md p-1 md:p-5 text-center border-b-4 border-solid border-green-500">
                         <img src="images/assunnah.png" alt="Logo" class="mx-auto">
                         <p class="text-center mb-2">  ইসলামিক অনলাইন মাদরাসা (IOM) হাটহাজারি কওমি বোর্ড কর্তৃক স্বীকৃত  </p>
                         <a href="#" class="button-b"> আরও জানুন </a>
                     </div>
-                    <div class="item shadow-md p-5 text-center border-b-4 border-solid border-green-500">
+                    <div class="item shadow-md p-1 md:p-5 text-center border-b-4 border-solid border-red-500">
                         <img src="images/assunnah.png" alt="Logo" class="mx-auto">
                         <p class="text-center mb-2">  ইসলামিক অনলাইন মাদরাসা (IOM) হাটহাজারি কওমি বোর্ড কর্তৃক স্বীকৃত  </p>
                         <a href="#" class="button-b"> আরও জানুন </a>
                     </div>
-                    <div class="item shadow-md p-5 text-center border-b-4 border-solid border-green-500">
+                    <div class="item shadow-md p-1 md:p-5 text-center border-b-4 border-solid border-green-500">
                         <img src="images/assunnah.png" alt="Logo" class="mx-auto">
                         <p class="text-center mb-2">  ইসলামিক অনলাইন মাদরাসা (IOM) হাটহাজারি কওমি বোর্ড কর্তৃক স্বীকৃত  </p>
                         <a href="#" class="button-b"> আরও জানুন </a>
@@ -81,8 +81,81 @@
     </section>
 
     <section class="our-courses-area py-10 bg-gradient-to-r from-green-100 via-purple-100 to-pink-100">
-        <div class="container">
+        <div class="container mx-auto w-11/12">
             <h1 class="s-heading text-5xl"> <span> কোর্স </span> সমূহ </h1>
+            <div class="row flex flex-col gap-5 md:flex-row">
+                <div class="courses md:w-8/12">
+                    <div class="alim-course card shadow-md bg-white mb-5">
+                        <div class="heading text-center font-bold border-b border-solid border-gray-300 py-2">
+                            <h1 class="text-2xl"> আলিম কোর্স </h1>
+                            <h1>  Bachelor in Dawah and Islamic Studies  </h1>
+                        </div>
+                        <div class="info grid grid-cols-2 justify-center gap-3 mt-3 px-2 md:grid-cols-4">
+                            <p class="bg-green-200 text-center rounded-md px-3 py-1"> <b>চলমান ব্যাচ</b> <br> ১৩তম </p>
+                            <p class="bg-red-200 text-center rounded-md px-3 py-1"> <b> চলমান সেশন </b> <br>  জুলাই-ডিসেম্বর  </p>
+                            <p class="bg-yellow-100 text-center rounded-md px-3 py-1"> <b> ভর্তির শেষ তারিখ </b> <br> ২৪-০৬-২০২৪  </p>
+                            <p class="bg-blue-200 text-center rounded-md px-3 py-1"> <b> ক্লাস শুরু </b> <br> ০১-০৭-২০২৪ </p>
+                        </div>
+                        <p class="p-3"> ৩ বছর মেয়াদী আলিম কোর্সটিতে রয়েছে ১৪ টি সাবজেক্ট। এই ১৪ টি সাবজেক্ট এর কিছু সাবজেক্ট এ রয়েছে দুইটি/তিনটি করে কোর্স যা এক-দেড় বছর সময় নিয়ে পড়ানো হয়। সর্বমোট ২৬টি কোর্সের সমন্বয়ে এই ১৪টি সাবজেক্ট সাজানো হয়েছে ৩ বছরের জন্য। আইওএম এর সকল সিঙ্গেল কোর্স আলিম কোর্সের অন্তর্ভুক্ত। অর্থাৎ, এই কোর্সটিতে ভর্তি হলে সিংঙ্গেল কোর্সগুলোতে ভর্তি হওয়ার প্রয়োজন নেই। IOM এর আলিম ও সিঙ্গেল কোর্সে প্রতিবছর জানুয়ারি এবং জুলাই ২ সেশনে আমরা ক্লাস কার্যক্রম শুরু করে থাকি।  </p>
+                        <div class="buttons flex justify-center gap-3 pb-3">
+                            <a href="#" class="button-b"> আরও জানুন </a>
+                            <a href="#" class="button-b"> ভর্তি হোন </a>
+                        </div>
+                    </div>
+                    <div class="rest-courses grid grid-cols-2 gap-2 md:gap-5">
+                        <div class="course card bg-white  shadow-md">
+                            <div class="heading text-center border-b border-solid border-gray-300 py-2">
+                                <h1 class="text-xl font-bold"> আলিম কোর্স </h1>
+                                <h1>  ৬ মাস মেয়াদী কোর্স - সিঙ্গেল কোর্স  </h1>
+                            </div>
+                            <p class="p-3 text-sm"> স্কুল মক্তব কোর্সটিতে আছে ১২টি সাবজেক্ট এর সম্মিলিত সিলেবাস। এগুলো হল তাজবীদ, হিফজুল কুরআন, দোয়া ও সুন্নাহ, আক্বিদা, ফিকহ, দাওয়াহ, আরবি ভাষা, আসমা উল হুসনা, সিরাহ, ইসলামি ইতিহাস, ইসলামী জ্ঞান, এবং ইলমের আদব।  </p>
+                            <div class="buttons flex justify-center gap-3 pb-3">
+                                <a href="#" class="bg-pink-200 rounded-md px-2 py-1 font-bold"> আরও জানুন </a>
+                            </div>
+                        </div>
+                        <div class="course card bg-white  shadow-md">
+                            <div class="heading text-center border-b border-solid border-gray-300 py-2">
+                                <h1 class="text-xl font-bold"> আলিম কোর্স </h1>
+                                <h1>  ৬ মাস মেয়াদী কোর্স - সিঙ্গেল কোর্স  </h1>
+                            </div>
+                            <p class="p-3 text-sm"> স্কুল মক্তব কোর্সটিতে আছে ১২টি সাবজেক্ট এর সম্মিলিত সিলেবাস। এগুলো হল তাজবীদ, হিফজুল কুরআন, দোয়া ও সুন্নাহ, আক্বিদা, ফিকহ, দাওয়াহ, আরবি ভাষা, আসমা উল হুসনা, সিরাহ, ইসলামি ইতিহাস, ইসলামী জ্ঞান, এবং ইলমের আদব।  </p>
+                            <div class="buttons flex justify-center gap-3 pb-3">
+                                <a href="#" class="bg-red-200 rounded-md px-2 py-1 font-bold"> আরও জানুন </a>
+                            </div>
+                        </div>
+                        <div class="course card bg-white  shadow-md">
+                            <div class="heading text-center border-b border-solid border-gray-300 py-2">
+                                <h1 class="text-xl font-bold"> আলিম কোর্স </h1>
+                                <h1>  ৬ মাস মেয়াদী কোর্স - সিঙ্গেল কোর্স  </h1>
+                            </div>
+                            <p class="p-3 text-sm"> স্কুল মক্তব কোর্সটিতে আছে ১২টি সাবজেক্ট এর সম্মিলিত সিলেবাস। এগুলো হল তাজবীদ, হিফজুল কুরআন, দোয়া ও সুন্নাহ, আক্বিদা, ফিকহ, দাওয়াহ, আরবি ভাষা, আসমা উল হুসনা, সিরাহ, ইসলামি ইতিহাস, ইসলামী জ্ঞান, এবং ইলমের আদব।  </p>
+                            <div class="buttons flex justify-center gap-3 pb-3">
+                                <a href="#" class="bg-yellow-200 rounded-md px-2 py-1 font-bold"> আরও জানুন </a>
+                            </div>
+                        </div>
+                        <div class="course card bg-white  shadow-md">
+                            <div class="heading text-center border-b border-solid border-gray-300 py-2">
+                                <h1 class="text-xl font-bold"> আলিম কোর্স </h1>
+                                <h1>  ৬ মাস মেয়াদী কোর্স - সিঙ্গেল কোর্স  </h1>
+                            </div>
+                            <p class="p-3 text-sm"> স্কুল মক্তব কোর্সটিতে আছে ১২টি সাবজেক্ট এর সম্মিলিত সিলেবাস। এগুলো হল তাজবীদ, হিফজুল কুরআন, দোয়া ও সুন্নাহ, আক্বিদা, ফিকহ, দাওয়াহ, আরবি ভাষা, আসমা উল হুসনা, সিরাহ, ইসলামি ইতিহাস, ইসলামী জ্ঞান, এবং ইলমের আদব।  </p>
+                            <div class="buttons flex justify-center gap-3 pb-3">
+                                <a href="#" class="bg-green-200 rounded-md px-2 py-1 font-bold"> আরও জানুন </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="courses-sidebar md:w-4/12">
+                    <div class="shadow-md bg-white p-5 card">
+                        <ul class="timeline-single">
+                            <li><strong>কোর্স নির্বাচন</strong> ইসলামিক অনলাইন মাদরাসায় ভর্তি হতে আপনাকে একটি কোর্স বাছাই করতে হবে - যে কোর্সে আপনি ভর্তি হতে চান। আমাদের সবগুলো কোর্স এবং কোর্সের কারিকুলাম জানতে <a href="#iomcourses"> এখানে </a> ক্লিক করুন। এরপরও সিন্ধান্ত নিতে পারছেন না? তাহলে আমাদের হেল্পলাইনে যোগাযোগ করুন।</li>
+                            <li><strong>ফি প্রদান</strong> আপনি যে কোর্সে ভর্তি হতে চান সেই কোর্সে গিয়ে ভর্তি হোন বাটনে ক্লিক করার মাধ্যমে সেই কোর্সের ফি দিতে পারবেন। যারা সরাসরি 017 66 305 059 (বিকাশ- Merchant) নাম্বার এর মাধ্যমে পেমেন্ট করবেন, তাদের আগে নিম্নোক্ত নাম্বারে টাকা পাঠাতে হবে।  </li>
+                            <li><strong>ফরম পূরণ</strong> টাকা পাঠানোর পর আলিম কোর্স, ফরজে আইনসহ যেকোনো সিঙ্গেল কোর্সে ভর্তি হওয়ার জন্য ফরম পূরণ করতে <a href="https://admission.iom.edu.bd"> এখানে </a> ক্লিক করুন। আর স্পেশাল কোর্সগুলোর ফর্ম কোর্স সংশ্লিষ্ট ভর্তির পেইজে দেওয়া আছে। </li>
+                            <li><strong> কোন প্রশ্ন? </strong> যদি আপনার কোন প্রশ্ন থাকে কিংবা উপরের ধাপগুলো সম্পর্কিত কোন সমস্যা থাকে তাহলে <a href="https://admission.iom.edu.bd/online-support/"> যোগাযোগ </a> করুন। </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

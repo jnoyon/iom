@@ -5,6 +5,9 @@
 body {
     font-family: AdorNoirrit;
 }
+p {
+    text-align: justify;
+}
 .gradient-g {
     background: linear-gradient(90deg,rgb(26,138,40) 0%,rgb(26,138,63) 35%,rgb(26,138,109) 100%);
     color: #FFF;
@@ -20,8 +23,62 @@ body {
 .s-heading {
     text-align: center;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .s-heading span {
     color: green;
 }
+.card {
+    border-radius: 5px;
+}
+.card p {
+    color: #3d3d3d;
+}
+ul.timeline-single {
+    position:relative;
+    list-style:none
+  }
+  ul.timeline-single::before {
+    content:'';
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:2px;
+    background:#1a8a3f;
+    left:-10px
+  }
+  ul.timeline-single>li {
+    position:relative;
+    margin-bottom:10px;
+    margin-left:5px;
+    text-align:justify
+  }
+  ul.timeline-single>li:last-child strong {
+    background:#f14736;
+    background:linear-gradient(90deg,rgba(241,71,54,1) 0%,rgba(161,36,23,1) 35%)
+  }
+  ul.timeline-single>li strong {
+    display:block;
+    background:#1a8a3f;
+    color:#fff;
+    padding:5px;
+    margin-bottom:5px;
+    background:linear-gradient(90deg,rgb(26,138,40) 0%,rgb(26,138,63) 35%,rgb(26,138,109) 100%)
+  }
+  ul.timeline-single>li:before,
+  ul.timeline-single>li:after {
+    content:'';
+    display:table;
+    clear:both
+  }
+  ul.timeline-single>li::before {
+    content:'';
+    position:absolute;
+    top:10px;
+    left:-22px;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    background:#fff;
+    border:2px solid #1a8a3f
+  }
