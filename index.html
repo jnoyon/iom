@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>IOM</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -53,16 +53,18 @@
     </header>
     <section>
         <div class="hero-section relative bg-[url('images/bg.jpg')] bg-cover">
-            <div class="bg-opacity py-20" style="background-color: rgba(6,6,6,.7);">
+            <div class="bg-opacity py-10 md:py-20" style="background-color: rgba(6,6,6,.7);">
             <div class="container mx-auto w-11/12">
                 <div class="hero-text text-center text-white font-bold mb-24">
-                    <h2 class="text-xl md:text-3xl"> ইসলামিক অনলাইন মাদ্রাসা </h2>
-                    <h1 class="text-2xl md:text-6xl"> এশিয়া মহাদেশের সবচেয়ে বড় </h1>
+                    <h2 class="text-xl mb-1 md:text-3xl"> ইসলামিক অনলাইন মাদ্রাসা </h2>
+                    <h1 class="text-3xl mb-1 md:text-6xl"> এশিয়া মহাদেশের সবচেয়ে বড় </h1>
                     <h2 class="text-xl md:text-3xl"> অনলাইন মাদ্রাসা </h2>
-                    <a href="#" class="gradient-g md:px-5 md:py-3 px-5 py-2 text-lg md:text-xl mt-3"> আরও জানুন </a>
-                    <br>
-                    <br>
-                    <input type="text" class="text">
+                    <a href="#" class="gradient-g md:px-5 md:py-3 px-5 py-1 text-md md:text-xl mt-3"> আরও জানুন </a>                    
+                    <div class="search mt-10 flex justify-center gap-2">
+                        <input type="text" name="searchbox" id="searchbox" class="rounded-md bg-transparent border border-solid p-2 border-gray-300" placeholder="এখানে লিখুন">
+                        <input type="submit" value="খুঁজুন" class="gradient-g px-5 py-2">
+                    </div>
+                    
                 </div>
                 
             </div>
@@ -163,7 +165,55 @@
                     </div>
                 </div>
                 <div class="courses-sidebar md:w-4/12">
-                    <div class="shadow-md bg-white p-5 card mb-5">
+                    <div class="shadow-md bg-white px-5 pb-5 card mb-5">
+                        <div class="heading text-center border-b border-solid border-gray-300 py-2 mb-4">
+                            <h1 class="text-xl font-bold"> এক নজরে </h1>
+                            <h1> আমাদের সকল কোর্স  </h1>
+                        </div>
+                        <ul class="timeline-single relative text-justify">
+                            <li class="pb-2"><strong class="bg-green-300 py-1.5 px-2 mb-1 block">মূল কোর্স</strong> 
+                                <ul>
+                                    <li>  <a href="#" class="font-bold"> আলিম কোর্স </a> <br> ৩ বছর মেয়াদী কোর্স </li>
+                                </ul>
+                            </li>
+                            <li class="pb-3"><strong class="bg-green-300 py-1.5 px-2 mb-1 block">  স্কুল মক্তব ও ফরজে আইন </strong> 
+                                <ul class="flex gap-3 text-center mt-2">
+                                    <li class="bg-green-100 rounded-md px-2"> <a href="#" class="block">  স্কুল মক্তব <span class="block text-xs"> ১৮ মাস মেয়াদী  </span>  </a>   </li>
+                                    <li class="bg-green-100 rounded-md px-2">  <a href="#" class="block">  ফরজে আইন <span class="block text-xs">  ৬ মাস মেয়াদী  </span>  </a>  </li>
+                                </ul>
+                            </li>
+                            <li><strong class="bg-pink-300 py-1.5 px-2 mb-1 block">  স্কুল মক্তব ও ফরজে আইন </strong> 
+                                <ul class="grid grid-cols-3 gap-2 text-center mt-2">
+                                    <li class="bg-pink-100 rounded-md px-1"> <a href="#" class="block">  দাওয়াহ কোর্স  <span class="block text-xs"> ১৮ মাস মেয়াদী  </span>  </a>   </li>
+                                    <li class="bg-pink-100 rounded-md px-1">  <a href="#" class="block">  ফিকহ কোর্স <span class="block text-xs">৬ মাস মেয়াদী </span> </a>   </li>
+                                    <li class="bg-pink-100 rounded-md px-1">  <a href="#" class="block">  আকিদাহ কোর্স <span class="block text-xs">৬ মাস মেয়াদী </span> </a>   </li>
+                                    <li class="bg-pink-100 rounded-md px-1">  <a href="#" class="block">  আরবি ভাষা কোর্স <span class="block text-xs">১৮ মাস মেয়াদী </span> </a>   </li>
+                                    <li class="bg-pink-100 rounded-md px-1"> <a href="#" class="block">  দাওয়াহ কোর্স  <span class="block text-xs"> ১৮ মাস মেয়াদী  </span>  </a>   </li>
+                                    <li class="bg-pink-100 rounded-md px-1">  <a href="#" class="block">  ফিকহ কোর্স <span class="block text-xs">৬ মাস মেয়াদী </span> </a>   </li>
+                                    <li class="bg-pink-100 rounded-md px-1">  <a href="#" class="block">  আকিদাহ কোর্স <span class="block text-xs">৬ মাস মেয়াদী </span> </a>   </li>
+                                    <li class="bg-pink-100 rounded-md px-1">  <a href="#" class="block">  আরবি ভাষা কোর্স <span class="block text-xs">১৮ মাস মেয়াদী </span> </a>   </li>
+                                </ul>
+                            </li>
+                            <li><strong class="bg-blue-300 py-1.5 px-2 mb-1 block">  স্পেশাল কোর্স </strong> 
+                                <ul class="grid grid-cols-3 gap-2 text-center mt-2">
+                                    <li class="bg-blue-100 rounded-md px-1"> <a href="#" class="block">  দাওয়াহ কোর্স  <span class="block text-xs"> ১৮ মাস মেয়াদী  </span>  </a>   </li>
+                                    <li class="bg-blue-100 rounded-md px-1">  <a href="#" class="block">  ফিকহ কোর্স <span class="block text-xs">৬ মাস মেয়াদী </span> </a>   </li>
+                                    <li class="bg-blue-100 rounded-md px-1">  <a href="#" class="block">  আকিদাহ কোর্স <span class="block text-xs">৬ মাস মেয়াদী </span> </a>   </li>
+                                    <li class="bg-blue-100 rounded-md px-1">  <a href="#" class="block">  আরবি ভাষা কোর্স <span class="block text-xs">১৮ মাস মেয়াদী </span> </a>   </li>
+                                    <li class="bg-blue-100 rounded-md px-1"> <a href="#" class="block">  দাওয়াহ কোর্স  <span class="block text-xs"> ১৮ মাস মেয়াদী  </span>  </a>   </li>
+                                    <li class="bg-blue-100 rounded-md px-1">  <a href="#" class="block">  ফিকহ কোর্স <span class="block text-xs">৬ মাস মেয়াদী </span> </a>   </li>
+                                    <li class="bg-blue-100 rounded-md px-1">  <a href="#" class="block">  আকিদাহ কোর্স <span class="block text-xs">৬ মাস মেয়াদী </span> </a>   </li>
+                                    <li class="bg-blue-100 rounded-md px-1">  <a href="#" class="block">  আরবি ভাষা কোর্স <span class="block text-xs">১৮ মাস মেয়াদী </span> </a>   </li>
+                                    <li class="bg-blue-100 rounded-md px-1">  <a href="#" class="block">  আরবি ভাষা কোর্স <span class="block text-xs">১৮ মাস মেয়াদী </span> </a>   </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="shadow-md bg-white px-5 pb-5 card mb-5">
+                        <div class="heading text-center border-b border-solid border-gray-300 py-2 mb-2">
+                            <h1 class="text-xl font-bold"> কিভাবে ভর্তি হবেন? </h1>
+                            <h1>  নিচের ধাপগুলো অনুসরণ করুন   </h1>
+                        </div>
                         <ul class="timeline-single relative text-justify">
                             <li><strong class="bg-green-300 block p-2 mb-1">কোর্স নির্বাচন</strong> ইসলামিক অনলাইন মাদরাসায় ভর্তি হতে আপনাকে একটি কোর্স বাছাই করতে হবে - যে কোর্সে আপনি ভর্তি হতে চান। আমাদের সবগুলো কোর্স এবং কোর্সের কারিকুলাম জানতে <a href="#iomcourses"> এখানে </a> ক্লিক করুন। এরপরও সিন্ধান্ত নিতে পারছেন না? তাহলে আমাদের হেল্পলাইনে যোগাযোগ করুন।</li>
                             <li><strong class="bg-pink-200 block p-2 mb-1">ফি প্রদান</strong> আপনি যে কোর্সে ভর্তি হতে চান সেই কোর্সে গিয়ে ভর্তি হোন বাটনে ক্লিক করার মাধ্যমে সেই কোর্সের ফি দিতে পারবেন। যারা সরাসরি 017 66 305 059 (বিকাশ- Merchant) নাম্বার এর মাধ্যমে পেমেন্ট করবেন, তাদের আগে নিম্নোক্ত নাম্বারে টাকা পাঠাতে হবে।  </li>
