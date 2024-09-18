@@ -6,6 +6,7 @@
     
     <title>IOM</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -50,42 +51,52 @@
         </div>
     </header>
     <section>
-        <div class="hero-section py-5 relative">
+        <div class="hero-section relative bg-[url('images/bg.jpg')] bg-cover">
+            <div class="bg-opacity py-20" style="background-color: rgba(6,6,6,.7);">
             <div class="container mx-auto w-11/12">
-                <div class="hero-text text-center font-bold ">
+                <div class="hero-text text-center text-white font-bold mb-24">
                     <h2 class="text-xl md:text-3xl"> ইসলামিক অনলাইন মাদ্রাসা </h2>
                     <h1 class="text-2xl md:text-6xl"> এশিয়া মহাদেশের সবচেয়ে বড় </h1>
                     <h2 class="text-xl md:text-3xl"> অনলাইন মাদ্রাসা </h2>
                     <a href="#" class="gradient-g md:px-5 md:py-3 px-5 py-2 text-lg md:text-xl mt-3"> আরও জানুন </a>
+                    <br>
+                    <br>
+                    <input type="text" class="text">
                 </div>
-                <div class="hero-fixed flex text-sm md:gap-7 gap-2">
-                    <div class="item shadow-md p-1 md:p-5 text-center border-b-4 border-solid border-green-500">
-                        <img src="images/assunnah.png" alt="Logo" class="mx-auto">
+                
+            </div>
+            </div>
+            <div class="hero-fixed absolute -bottom-24 w-full">
+                <div class="container flex text-sm md:gap-7 gap-1 mx-auto w-11/12">
+                    <div class="item bg-white shadow-md p-1 md:p-5 text-center border-b-4 border-solid border-green-500">
+                        <img src="images/assunnah.png" alt="Logo" class="mx-auto w-14 md:w-auto mb-1">
                         <p class="text-center mb-2">  ইসলামিক অনলাইন মাদরাসা (IOM) হাটহাজারি কওমি বোর্ড কর্তৃক স্বীকৃত  </p>
-                        <a href="#" class="button-b"> আরও জানুন </a>
+                        <a href="#" class="bg-green-200 rounded-md font-bold px-3 py-1 inline-block text-sm mb-1"> আরও জানুন </a>
                     </div>
-                    <div class="item shadow-md p-1 md:p-5 text-center border-b-4 border-solid border-red-500">
-                        <img src="images/assunnah.png" alt="Logo" class="mx-auto">
-                        <p class="text-center mb-2">  ইসলামিক অনলাইন মাদরাসা (IOM) হাটহাজারি কওমি বোর্ড কর্তৃক স্বীকৃত  </p>
-                        <a href="#" class="button-b"> আরও জানুন </a>
+                    <div class="item bg-white shadow-md p-1 md:p-5 text-center border-b-4 border-solid border-red-500">
+                        <img src="images/iso.jpg" alt="Logo" class="mx-auto w-14 md:w-24 mb-1">
+                        <p class="text-center mb-2">   আইওএম ISO সনদপ্রাপ্ত আন্তর্জাতিক মানের একটি শিক্ষা প্রতিষ্ঠান  </p>
+                        <a href="#" class="bg-red-200 rounded-md font-bold px-3 py-1 inline-block text-sm mb-1"> আরও জানুন </a>
                     </div>
-                    <div class="item shadow-md p-1 md:p-5 text-center border-b-4 border-solid border-green-500">
-                        <img src="images/assunnah.png" alt="Logo" class="mx-auto">
-                        <p class="text-center mb-2">  ইসলামিক অনলাইন মাদরাসা (IOM) হাটহাজারি কওমি বোর্ড কর্তৃক স্বীকৃত  </p>
-                        <a href="#" class="button-b"> আরও জানুন </a>
+                    <div class="item bg-white shadow-md p-1 md:p-5 text-center border-b-4 border-solid border-green-500">
+                        <img src="images/assunnah.png" alt="Logo" class="mx-auto w-14 md:w-auto mb-1">
+                        <p class="text-center mb-2">  নবীন উদ্যোক্তা সম্মাননা-২০২১ এ ৩০০০ প্রতিষ্ঠান থেকে সেরা দশে স্থান  </p>
+                        <a href="#" class="bg-green-200 rounded-md font-bold px-3 py-1 inline-block text-sm mb-1"> আরও জানুন </a>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
 
+
+
     <section class="our-courses-area py-10 bg-gradient-to-r from-green-100 via-purple-100 to-pink-100">
-        <div class="container mx-auto w-11/12">
+        <div class="container mx-auto w-11/12 mt-24">
             <h1 class="s-heading text-5xl"> <span> কোর্স </span> সমূহ </h1>
             <div class="row flex flex-col gap-5 md:flex-row">
                 <div class="courses md:w-8/12">
-                    <div class="alim-course card shadow-md bg-white mb-5">
+                    <div class="alim-course relative card shadow-md bg-white mb-5">
+                        <span class="admission-status bg-red-400"></span>
                         <div class="heading text-center font-bold border-b border-solid border-gray-300 py-2">
                             <h1 class="text-2xl"> আলিম কোর্স </h1>
                             <h1>  Bachelor in Dawah and Islamic Studies  </h1>
@@ -103,7 +114,8 @@
                         </div>
                     </div>
                     <div class="rest-courses grid grid-cols-2 gap-2 md:gap-5">
-                        <div class="course card bg-white  shadow-md">
+                        <div class="course card relative bg-white  shadow-md">
+                            <span class="admission-status bg-green-400"></span>
                             <div class="heading text-center border-b border-solid border-gray-300 py-2">
                                 <h1 class="md:text-xl font-bold"> আলিম কোর্স </h1>
                                 <h2 class="text-gray-600 text-sm">  ৬ মাস মেয়াদী কোর্স - সিঙ্গেল কোর্স  </h2>
@@ -216,6 +228,19 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+
+    <section class="mobile-nav fixed bottom-0 w-full bg-gradient-to-r from-green-100 via-purple-100 to-pink-100  shadow-md py-2 mt-24">
+        <div class="container mx-auto w-11/12 md:hidden">
+            <ul class="flex justify-between text-center text-sm font-bold">
+                <li class=""><a href="#" class="w-1/5"> <i class="fa-solid fa-graduation-cap"></i> <span class="block">ক্যাম্পাস</span> </a></li>
+                <li class=""><a href="#" class="w-1/5"> <i class="fa-solid fa-user-graduate"></i> <span class="block">পোর্টাল</span> </a></li>
+                <li class=""><a href="#" class="w-1/5"> <i class="fa-solid fa-house"></i> <span class="block">হোম</span> </a></li>
+                <li class=""><a href="#" class="w-1/5"> <i class="fa-solid fa-headset"></i> <span class="block">সাপোর্ট</span> </a></li>
+                <li class=""><a href="#" class="w-1/5"> <i class="fa-solid fa-bars"></i> <span class="block">আরও</span> </a></li>
+            </ul>
         </div>
     </section>
 
