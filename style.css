@@ -80,3 +80,22 @@ ul.timeline-single>li {
   background:#fff;
   border:2px solid #1a8a3f;
 }
+
+.masonry-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  grid-auto-flow: dense; /* Ensures the masonry effect */
+  gap: 10px; /* Adjust the gap between items */
+}
+
+.masonry-layout li {
+  list-style-type: none;
+}
+
+.masonry-layout a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
